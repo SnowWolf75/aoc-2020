@@ -41,36 +41,37 @@ myday = "{:02d}".format(args.day)
 template = """
 filename = "{2}"
 class day{0}:
-  def __init__(self):
-    pass
+    def __init__(self):
+        pass
 
 
 class day{0}part1(day{0}):
-  def solve(self, args):
-    pass
+    def solve(self, args):
+        pass
 
 
 class day{0}part2(day{0}):
-  def solve(self, args):
-    pass
+    def solve(self, args):
+        pass
 
 
 class examples(unittest.TestCase):
-  def test_examples_part1(self):
-    day{1} = day{0}part1()
-    # self.assetTrue()
+    def test_examples_part1(self):
+        day{1} = day{0}part1()
+        # self.assetTrue()
 
-  def test_examples_part2(self):
-    day{1} = day{0}part2()
-    # self.assetTrue()
+    def test_examples_part2(self):
+        day{1} = day{0}part2()
+        # self.assetTrue()
 
 
 class solutions(unittest.TestCase):
-  def test_part1(self):
-    day{1} = day{0}part1()
+    def test_part1(self):
+        day{1} = day{0}part1()
 
-  def test_part2(self):
-    day{1} = day{0}part2()
+    def test_part2(self):
+        day{1} = day{0}part2()
+
 """.format(myday, args.day, outfile)
 
 with open(newfile, "a+") as fh:
