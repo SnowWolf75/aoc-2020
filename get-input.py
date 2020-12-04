@@ -55,7 +55,7 @@ class day{0}part2(day{0}):
         pass
 
 
-class examples(unittest.TestCase):
+class tests(unittest.TestCase):
     def test_examples_part1(self):
         day{1} = day{0}part1()
         # self.assetTrue()
@@ -65,13 +65,12 @@ class examples(unittest.TestCase):
         # self.assetTrue()
 
 
-class solutions(unittest.TestCase):
-    def test_part1(self):
-        day{1} = day{0}part1()
+def my_file(name):
+    data = list(filemap(lambda x: x, name))
+    return data
 
-    def test_part2(self):
-        day{1} = day{0}part2()
-
+if __name__ == '__main__':
+    mydata = my_file(filename)
 """.format(myday, args.day, outfile)
 
 with open(newfile, "a+") as fh:
